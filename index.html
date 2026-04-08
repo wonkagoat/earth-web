@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-solar" aria-hidden="true">
+      <div class="loader-sun"></div>
+      <div class="loader-orbit loader-orbit-1">
+        <div class="loader-planet loader-mercury"></div>
+      </div>
+      <div class="loader-orbit loader-orbit-2">
+        <div class="loader-planet loader-venus"></div>
+      </div>
+      <div class="loader-orbit loader-orbit-3">
+        <div class="loader-planet loader-earth"></div>
+      </div>
+      <div class="loader-orbit loader-orbit-4">
+        <div class="loader-planet loader-mars"></div>
+      </div>
+    </div>
+    <p id="loader-text" class="loader-text">Showcasing the solar system...</p>
+  </div>
+  <div class="noise"></div>
+  <header class="hero">
+    <nav class="top-nav">
+      <h1 class="brand">THE WORLD</h1>
+      <a id="journey-link" class="nav-link" href="#signup-modal">Start the Journey</a>
+    </nav>
+    <div class="hero-content reveal">
+      <p class="eyebrow">A Living Planet</p>
+      <h2>One world.<br />Infinite stories.</h2>
+      <p class="lead">
+        From mountain ranges and megacities to coral reefs and deserts, Earth is a mosaic of cultures, climates, and wonders.
+      </p>
+      <a class="cta" href="#live">Live Data</a>
+    </div>
+    <div class="solar-system" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="orbit orbit-1">
+        <div class="planet planet-1"></div>
+      </div>
+      <div class="orbit orbit-2">
+        <div class="planet planet-2"></div>
+      </div>
+      <div class="orbit orbit-3">
+        <div class="planet planet-3"></div>
+      </div>
+      <div class="orbit orbit-4">
+        <div class="planet planet-4"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="live" class="section pulse reveal">
+      <div>
+        <p class="eyebrow">Live Planet Pulse</p>
+        <h3>People alive right now</h3>
+      </div>
+      <div class="live-grid">
+        <article class="live-card live-card-primary">
+          <p class="live-label">World population (estimated)</p>
+          <p id="live-population" class="live-number" aria-live="polite">8,300,678,395</p>
+          <p id="live-pop-meta" class="live-note">Based on 2026 UN/Worldometer yearly-change values.</p>
+        </article>
+        <article class="live-card live-card-primary">
+          <p class="live-label">Human deaths this year (estimated)</p>
+          <p id="live-deaths" class="live-number" aria-live="polite">0</p>
+          <p id="live-deaths-meta" class="live-note">Modeled from annual global deaths in UN WPP data (via OWID).</p>
+        </article>
+        <article class="live-card">
+          <p class="live-label">Estimated total eukaryotic species</p>
+          <p class="live-number">8,700,000</p>
+          <p class="live-note">Mora et al. (2011): 8.7 million (+/- 1.3 million).</p>
+        </article>
+        <article class="live-card">
+          <p class="live-label">Recorded species extinctions since 1500</p>
+          <p class="live-number">900+</p>
+          <p class="live-note">Official EX+EW records on IUCN Red List (summarized in OWID chart).</p>
+        </article>
+        <article class="live-card">
+          <p class="live-label">Species threatened with extinction</p>
+          <p class="live-number">47,187</p>
+          <p class="live-note">IUCN Red List update published March 27, 2025.</p>
+        </article>
+      </div>
+      <div class="sources">
+        <p class="sources-title">Data sources</p>
+        <a href="https://www.worldometers.info/world-population/" target="_blank" rel="noopener noreferrer">Worldometer world population table (UN WPP 2024-based)</a>
+        <a href="https://ourworldindata.org/births-and-deaths" target="_blank" rel="noopener noreferrer">Our World in Data: annual global births and deaths (UN WPP)</a>
+        <a href="https://doi.org/10.1371/journal.pbio.1001127" target="_blank" rel="noopener noreferrer">Mora et al., PLOS Biology (2011): global species estimate</a>
+        <a href="https://ourworldindata.org/grapher/extinct-species-since-1500" target="_blank" rel="noopener noreferrer">Our World in Data: recorded extinctions since 1500 (IUCN source)</a>
+        <a href="https://www.iucn.nl/en/news/first-1000-fungi-on-iucn-red-list-reveal-growing-threats-iucn-red-list/" target="_blank" rel="noopener noreferrer">IUCN update (March 27, 2025): threatened species total</a>
+      </div>
+    </section>
+
+    <section id="regions" class="section reveal">
+      <h3>World Regions</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Africa</h4>
+          <p>Home to immense biodiversity, ancient civilizations, and rapidly growing innovation hubs.</p>
+        </article>
+        <article class="card">
+          <h4>Asia</h4>
+          <p>The largest continent, rich with languages, spiritual traditions, and economic powerhouses.</p>
+        </article>
+        <article class="card">
+          <h4>Europe</h4>
+          <p>A tapestry of history and modern design, where medieval streets meet cutting-edge research.</p>
+        </article>
+        <article class="card">
+          <h4>Americas</h4>
+          <p>From Arctic tundra to tropical rainforests, the Americas hold extraordinary environmental range.</p>
+        </article>
+        <article class="card">
+          <h4>Oceania</h4>
+          <p>Island nations, indigenous heritage, and vast Pacific ecosystems shape this unique region.</p>
+        </article>
+        <article class="card">
+          <h4>Antarctica</h4>
+          <p>A frozen frontier dedicated to science, crucial for understanding Earth's climate systems.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split reveal">
+      <div>
+        <h3>By The Numbers</h3>
+        <p>Earth's diversity can be hard to grasp, so here are a few snapshots of our shared home.</p>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="value" data-target="195">0</span>
+          <span class="label">Countries</span>
+        </div>
+        <div class="stat">
+          <span class="value" data-target="5">0</span>
+          <span class="label">Oceans</span>
+        </div>
+        <div class="stat">
+          <span class="value" data-target="7000">0</span>
+          <span class="label">Living languages</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made to celebrate our planet.</p>
+    <p><a class="footer-link" href="planet-hub.html">Visit The New Planet Hub Page</a></p>
+  </footer>
+
+  <div id="signup-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+    <div class="modal-card">
+      <div id="signup-burst" class="signup-burst" aria-hidden="true"></div>
+      <a id="close-signup" class="modal-close" href="#" aria-label="Close sign up">x</a>
+      <p class="eyebrow">Interplanetary Welcome Desk</p>
+      <h3 id="signup-title">Sign Up For Earth</h3>
+      <p class="modal-copy">Officially unofficial. Join the planet and pick your home base.</p>
+      <form id="signup-form" class="signup-form">
+        <label>
+          Name
+          <input name="name" type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" placeholder="you@earth.com" required />
+        </label>
+        <label>
+          Region
+          <select name="region" required>
+            <option value="">Choose a region</option>
+            <option>Africa</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>Americas</option>
+            <option>Oceania</option>
+            <option>Antarctica</option>
+          </select>
+        </label>
+        <button type="submit" class="signup-btn">Join Earth</button>
+      </form>
+      <p id="signup-success" class="signup-success" hidden></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,234 @@
+:root {
+  --bg: #061119;
+  --ink: #eef5ff;
+  --line: rgba(238, 245, 255, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 20% 15%, rgba(26, 133, 182, 0.35), transparent 36%),
+    radial-gradient(circle at 80% 20%, rgba(114, 69, 191, 0.25), transparent 32%),
+    linear-gradient(140deg, var(--bg), #03090d 60%);
+  padding: 1.1rem;
+}
+
+.hub-hero {
+  width: min(1080px, 95vw);
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.2rem;
+  background: rgba(10, 25, 37, 0.8);
+}
+
+.back-link {
+  color: #9ad3ff;
+  text-decoration: none;
+}
+
+.kicker {
+  margin: 1rem 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #8ed9cf;
+  font-size: 0.82rem;
+}
+
+h1,
+h2 {
+  font-family: "Sora", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0.35rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.intro {
+  color: #d4e7f9;
+  max-width: 62ch;
+}
+
+.hub-grid {
+  width: min(1080px, 95vw);
+  margin: 1rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.9rem;
+}
+
+.mission {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem;
+  background: rgba(11, 35, 52, 0.72);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.mission.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mission-a {
+  background: linear-gradient(165deg, rgba(12, 71, 113, 0.85), rgba(6, 35, 58, 0.86));
+}
+
+.mission-b {
+  background: linear-gradient(165deg, rgba(16, 90, 66, 0.85), rgba(7, 43, 33, 0.86));
+}
+
+.mission-c {
+  background: linear-gradient(165deg, rgba(92, 60, 129, 0.85), rgba(35, 21, 56, 0.86));
+}
+
+.mission p {
+  color: #d6e9fb;
+}
+
+.mission-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.58rem 0.92rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: #f2efe1;
+  color: #0d1a24;
+}
+
+.status {
+  width: min(1080px, 95vw);
+  margin: 1rem auto 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  background: rgba(10, 24, 35, 0.75);
+}
+
+.guide-panel {
+  width: min(1080px, 95vw);
+  margin: 1rem auto 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(9, 31, 46, 0.78);
+}
+
+.guide-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: #95d7ff;
+}
+
+#guide-title {
+  margin-top: 0.3rem;
+  font-size: clamp(1.3rem, 3.2vw, 2rem);
+}
+
+#guide-desc {
+  color: #d8eafb;
+}
+
+.guide-steps {
+  margin: 0.7rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.45rem;
+  color: #e5f2ff;
+}
+
+.local-report-box {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+.locate-status {
+  margin: 0.55rem 0 0;
+  color: #cae5fa;
+  font-size: 0.95rem;
+}
+
+.local-report {
+  margin-top: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  background: rgba(12, 39, 57, 0.78);
+}
+
+.local-report h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#report-summary {
+  margin: 0.45rem 0;
+  color: #d8eafb;
+}
+
+#report-points {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #e7f2ff;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.guides-board {
+  width: min(1080px, 95vw);
+  margin: 1rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.8rem;
+}
+
+.guide-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(9, 28, 42, 0.78);
+  padding: 0.85rem 0.9rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.guide-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.guide-local {
+  margin: 0 0 0.55rem;
+  padding: 0.5rem 0.55rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #cde5f8;
+  font-size: 0.92rem;
+}
+
+.guide-card ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: #d9ebfa;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.guide-card.is-focus {
+  border-color: rgba(255, 207, 120, 0.8);
+  box-shadow: 0 0 0 1px rgba(255, 207, 120, 0.25), 0 8px 22px rgba(0, 0, 0, 0.28);
+  transform: translateY(-2px);
+}

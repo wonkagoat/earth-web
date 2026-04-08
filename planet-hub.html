@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planet Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="planet-hub.css" />
+</head>
+<body>
+  <header class="hub-hero">
+    <a class="back-link" href="index.html">Back To Home</a>
+    <p class="kicker">Planet Hub</p>
+    <h1>Choose Your Earth Mission</h1>
+    <p class="intro">This is a brand-new page built as a mission control board for planet explorers.</p>
+  </header>
+
+  <main class="hub-grid">
+    <article class="mission mission-a reveal">
+      <h2>Ocean Guardian</h2>
+      <p>Track ocean temperatures, coral stress, and coastal cleanup missions.</p>
+      <button class="mission-btn" type="button" data-mission="ocean">Open Guide</button>
+    </article>
+    <article class="mission mission-b reveal">
+      <h2>Forest Watch</h2>
+      <p>Monitor tree cover change and support habitat restoration efforts.</p>
+      <button class="mission-btn" type="button" data-mission="forest">Open Guide</button>
+    </article>
+    <article class="mission mission-c reveal">
+      <h2>City Air Lab</h2>
+      <p>View air quality trends and compare low-emission progress by region.</p>
+      <button class="mission-btn" type="button" data-mission="air">Open Guide</button>
+    </article>
+  </main>
+
+  <p id="status" class="status">No mission selected yet.</p>
+  <section id="guide-panel" class="guide-panel" aria-live="polite">
+    <p class="guide-kicker">Mission Guide</p>
+    <h2 id="guide-title">Pick a mission to get your guide</h2>
+    <p id="guide-desc">Click any mission card above and you will get practical steps here.</p>
+    <ol id="guide-steps" class="guide-steps"></ol>
+    <div class="local-report-box">
+      <button id="locate-btn" class="mission-btn" type="button">Use My Location</button>
+      <p id="locate-status" class="locate-status">Generate a local place report for where you are right now.</p>
+      <article id="local-report" class="local-report" hidden>
+        <h3 id="report-title">Local Earth Report</h3>
+        <p id="report-summary"></p>
+        <ul id="report-points"></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="guides-board">
+    <article id="guide-ocean" class="guide-card">
+      <h3>Ocean Guardian Guide</h3>
+      <p id="ocean-local" class="guide-local">Local report pending. Click "Use My Location".</p>
+      <ul>
+        <li>Check local water conditions and identify one nearby cleanup event.</li>
+        <li>Reduce single-use plastic for one week and track your changes.</li>
+        <li>Share one ocean-protection action with friends or family.</li>
+      </ul>
+    </article>
+    <article id="guide-forest" class="guide-card">
+      <h3>Forest Watch Guide</h3>
+      <p id="forest-local" class="guide-local">Local report pending. Click "Use My Location".</p>
+      <ul>
+        <li>Visit a local park/forest and log signs of habitat stress.</li>
+        <li>Support one restoration project or tree-planting group.</li>
+        <li>Switch one product to a certified sustainable wood/paper option.</li>
+      </ul>
+    </article>
+    <article id="guide-air" class="guide-card">
+      <h3>City Air Lab Guide</h3>
+      <p id="air-local" class="guide-local">Local report pending. Click "Use My Location".</p>
+      <ul>
+        <li>Check AQI at two times daily for one week.</li>
+        <li>Replace one weekly car trip with a low-emission transport option.</li>
+        <li>Adopt one indoor air-improvement habit (filter check, no-idle rule).</li>
+      </ul>
+    </article>
+  </section>
+
+  <script src="planet-hub.js"></script>
+</body>
+</html>
